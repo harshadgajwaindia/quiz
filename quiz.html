@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ APP</title>
+    <style>
+        .main{
+            background-color: white;
+           height: 767px;
+           width: 100%;
+           margin: 0;
+           padding: 0;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           justify-items: center;
+        }
+        .box{
+            border-radius: 3%;
+            size: 10px;
+            height: fit-content;
+            width: fit-content;
+            background-color: skyblue;
+            display: flexbox;
+            justify-content: center;
+            justify-items: center;
+            text-align: center;
+            
+        }
+        .btn:hover{
+           
+            background-color: skyblue;
+            color: white;
+           
+            
+        }
+        .btns{
+            display: flexbox;
+            justify-content: flex-start;
+            justify-items: flex-start;
+            padding:10px ;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .btn{
+            padding: 5px;
+            border-radius: 2%;
+        }
+        .btn:focus{
+            background-color: rgb(119, 234, 119);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="box" class="box">
+            <h1>QUIZ</h1>
+            <div style="height: 1px; background-color: black; "></div>
+            <h2 class="question" id="question"></h2>
+            <div class="btns" id="btn">
+            <button class="btn" id="btn1">answer 1</button>
+            <br style="padding: 5px;">
+            <button class="btn" id="btn2">answer 2</button>
+            <br>
+            <button class="btn" id="btn3">answer 3</button>
+            <br>
+            <button class="btn" id="btn4">answer 4</button>
+            
+            </div>
+            <button style="background-color: rgb(68, 235, 157);" onclick="change()">next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
